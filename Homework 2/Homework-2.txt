@@ -8,7 +8,7 @@ Homework 2
 3. Explain how CSS rules cascade.
 	  If two or more rules that apply to the same element, it is important to understand which one will take precedence. For inheritance, a child element will naturally inherit properties from its parent element. In specifity, if there are two or more CSS rules that point to the same element, the selector with the highest specificity will "win", and its style declaration will be applied to that html element. The last rule is if there are two or more CSS rules that point to the same element and they are equally specific, the rule applied last will "win". The important keyword will trump anything.
 4. Contrast display: block, inline, inline-block.
-	  Block elements take up an entire line, inline elements can sit next to other inline elements on a line.
+	  Display inline displayes an element as an inline element (like <span>. Any height and width properties will have no effect as a default. Block displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width. Inline-block displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.
 5. What are border, padding, and margin?
   	A border exists for every box and separates the edge of one box from another. Margin is the space that sits outside the edge of the border (you can set the width of a margin to create a gap between the borders of two adjacent boxes). Padding is the space between the border of a box and any content contained within (adding padding can increase the readability of its contents.
 
