@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Examples</title>
+</head>
+<body>
+<h1>JavaScript Examples</h1>
+<p>Open the browser console to see the output.</p>
+
+<script>
+    // Task 1: Add a string and a number together
+    const string = "Hello";
+    const number = 10;
+    const result1 = string + number;
+    console.log("Task 1 Output:", result1);
+    console.log("Explanation of Output: When a string and a number are added together, the program converts the number to a string and concatenates them.");
+
+    // Task 2: Run the Number() function on true and false
+    const numberTrue = Number(true);
+    const numberFalse = Number(false);
+    console.log("Task 2 Output (true):", numberTrue);
+    console.log("Task 2 Output (false):", numberFalse);
+    console.log("Explanation of Output: The Number() function converts true to 1 and false to 0 because that is the number they represent correspondingly.");
+
+    // Task 3: Run the Boolean() function on 1, 0, and "0"
+    const boolean1 = Boolean(1);
+    const boolean0 = Boolean(0);
+    const booleanString0 = Boolean("0");
+    console.log("Task 3 Output (1):", boolean1);
+    console.log("Task 3 Output (0):", boolean0);
+    console.log("Task 3 Output (\"0\"):", booleanString0);
+    console.log("Explanation of Output: The Boolean() function converts 1 to true, 0 to false, and the string to true because it is not empty.");
+</script>
+</body>
+</html>
