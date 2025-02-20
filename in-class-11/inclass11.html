@@ -17,7 +17,7 @@
     $('#ajax-get').on('click', function () {
         console.log('clicked')
         $.ajax({
-            url: 'http://localhost:8888',
+            url: 'http://localhost:8888/cats',
             type: "GET",
             dataType: "json",
             success: function (data) {
