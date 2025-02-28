@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<button id="ajax-get">
+    ajax get
+</button>
+
+<div id="data-container"></div>
+
+<script>
+    $('#ajax-get').on('click', function () {
+        $.ajax({
+            url: 'http://localhost:8888/data',
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                if (data.success) {
+                    $('#data-container').append(`<div>${data.message}</div>`);
+                    $('#data-container').append(`<div>${data.time}</div>`);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("AJAX Error:", status, error); // Log errors for debugging
+            }
+        });
+    });
+</script>
+</body>
+</html>
